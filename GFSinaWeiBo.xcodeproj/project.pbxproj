@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0C561A1C20671700B6CF1D /* GFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C56191C20671700B6CF1D /* GFHomeViewController.m */; };
+		FC0C56201C2067C000B6CF1D /* GFMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C561F1C2067C000B6CF1D /* GFMessageViewController.m */; };
+		FC0C56231C2067CE00B6CF1D /* GFDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C56221C2067CE00B6CF1D /* GFDiscoverViewController.m */; };
+		FC0C56261C2067D500B6CF1D /* GFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C56251C2067D500B6CF1D /* GFMeViewController.m */; };
+		FC0C562D1C206A7700B6CF1D /* UIImage+GFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C562C1C206A7700B6CF1D /* UIImage+GFImage.m */; };
 		FCB8CAF21C205BAF002EE1D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAF11C205BAF002EE1D3 /* main.m */; };
 		FCB8CAF51C205BAF002EE1D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAF41C205BAF002EE1D3 /* AppDelegate.m */; };
 		FCB8CAFE1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAFC1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld */; };
@@ -14,6 +19,9 @@
 		FCB8CB031C205BAF002EE1D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB8CB011C205BAF002EE1D3 /* LaunchScreen.storyboard */; };
 		FCB8CB0E1C205BAF002EE1D3 /* GFSinaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CB0D1C205BAF002EE1D3 /* GFSinaWeiBoTests.m */; };
 		FCB8CB191C205BAF002EE1D3 /* GFSinaWeiBoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CB181C205BAF002EE1D3 /* GFSinaWeiBoUITests.m */; };
+		FCB8CB271C20618E002EE1D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB8CB261C20618E002EE1D3 /* UIKit.framework */; };
+		FCB8CB291C206194002EE1D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB8CB281C206194002EE1D3 /* Foundation.framework */; };
+		FCB8CB2F1C20622C002EE1D3 /* GFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CB2E1C20622C002EE1D3 /* GFTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0C56181C20671700B6CF1D /* GFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHomeViewController.h; sourceTree = "<group>"; };
+		FC0C56191C20671700B6CF1D /* GFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHomeViewController.m; sourceTree = "<group>"; };
+		FC0C561E1C2067C000B6CF1D /* GFMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFMessageViewController.h; sourceTree = "<group>"; };
+		FC0C561F1C2067C000B6CF1D /* GFMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFMessageViewController.m; sourceTree = "<group>"; };
+		FC0C56211C2067CE00B6CF1D /* GFDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFDiscoverViewController.h; sourceTree = "<group>"; };
+		FC0C56221C2067CE00B6CF1D /* GFDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFDiscoverViewController.m; sourceTree = "<group>"; };
+		FC0C56241C2067D500B6CF1D /* GFMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFMeViewController.h; sourceTree = "<group>"; };
+		FC0C56251C2067D500B6CF1D /* GFMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFMeViewController.m; sourceTree = "<group>"; };
+		FC0C562B1C206A7700B6CF1D /* UIImage+GFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GFImage.h"; sourceTree = "<group>"; };
+		FC0C562C1C206A7700B6CF1D /* UIImage+GFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GFImage.m"; sourceTree = "<group>"; };
 		FCB8CAED1C205BAF002EE1D3 /* GFSinaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFSinaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB8CAF11C205BAF002EE1D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCB8CAF31C205BAF002EE1D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +66,10 @@
 		FCB8CB141C205BAF002EE1D3 /* GFSinaWeiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFSinaWeiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB8CB181C205BAF002EE1D3 /* GFSinaWeiBoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSinaWeiBoUITests.m; sourceTree = "<group>"; };
 		FCB8CB1A1C205BAF002EE1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB8CB261C20618E002EE1D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FCB8CB281C206194002EE1D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCB8CB2D1C20622C002EE1D3 /* GFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTabBarViewController.h; sourceTree = "<group>"; };
+		FCB8CB2E1C20622C002EE1D3 /* GFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB8CB291C206194002EE1D3 /* Foundation.framework in Frameworks */,
+				FCB8CB271C20618E002EE1D3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +99,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0C561B1C20677100B6CF1D /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C561E1C2067C000B6CF1D /* GFMessageViewController.h */,
+				FC0C561F1C2067C000B6CF1D /* GFMessageViewController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		FC0C561C1C20678000B6CF1D /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C56211C2067CE00B6CF1D /* GFDiscoverViewController.h */,
+				FC0C56221C2067CE00B6CF1D /* GFDiscoverViewController.m */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		FC0C561D1C20678A00B6CF1D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C56241C2067D500B6CF1D /* GFMeViewController.h */,
+				FC0C56251C2067D500B6CF1D /* GFMeViewController.m */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		FC0C56271C20687000B6CF1D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C562B1C206A7700B6CF1D /* UIImage+GFImage.h */,
+				FC0C562C1C206A7700B6CF1D /* UIImage+GFImage.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		FCB8CAE41C205BAF002EE1D3 = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +158,13 @@
 		FCB8CAEF1C205BAF002EE1D3 /* GFSinaWeiBo */ = {
 			isa = PBXGroup;
 			children = (
-				FCB8CAF31C205BAF002EE1D3 /* AppDelegate.h */,
-				FCB8CAF41C205BAF002EE1D3 /* AppDelegate.m */,
+				FCB8CB2C1C2061F0002EE1D3 /* Home */,
+				FC0C561D1C20678A00B6CF1D /* Me */,
+				FC0C561C1C20678000B6CF1D /* Discover */,
+				FC0C561B1C20677100B6CF1D /* Message */,
+				FCB8CB2B1C2061AB002EE1D3 /* Other */,
+				FCB8CB2A1C206199002EE1D3 /* FrameWork */,
 				FCB8CAFF1C205BAF002EE1D3 /* Assets.xcassets */,
-				FCB8CB011C205BAF002EE1D3 /* LaunchScreen.storyboard */,
-				FCB8CB041C205BAF002EE1D3 /* Info.plist */,
-				FCB8CAFC1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld */,
 				FCB8CAF01C205BAF002EE1D3 /* Supporting Files */,
 			);
 			path = GFSinaWeiBo;
@@ -133,6 +194,39 @@
 				FCB8CB1A1C205BAF002EE1D3 /* Info.plist */,
 			);
 			path = GFSinaWeiBoUITests;
+			sourceTree = "<group>";
+		};
+		FCB8CB2A1C206199002EE1D3 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				FCB8CB281C206194002EE1D3 /* Foundation.framework */,
+				FCB8CB261C20618E002EE1D3 /* UIKit.framework */,
+			);
+			name = FrameWork;
+			sourceTree = "<group>";
+		};
+		FCB8CB2B1C2061AB002EE1D3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C56271C20687000B6CF1D /* Extension */,
+				FCB8CAF31C205BAF002EE1D3 /* AppDelegate.h */,
+				FCB8CAF41C205BAF002EE1D3 /* AppDelegate.m */,
+				FCB8CB011C205BAF002EE1D3 /* LaunchScreen.storyboard */,
+				FCB8CB041C205BAF002EE1D3 /* Info.plist */,
+				FCB8CAFC1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		FCB8CB2C1C2061F0002EE1D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FCB8CB2D1C20622C002EE1D3 /* GFTabBarViewController.h */,
+				FCB8CB2E1C20622C002EE1D3 /* GFTabBarViewController.m */,
+				FC0C56181C20671700B6CF1D /* GFHomeViewController.h */,
+				FC0C56191C20671700B6CF1D /* GFHomeViewController.m */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +359,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0C561A1C20671700B6CF1D /* GFHomeViewController.m in Sources */,
+				FCB8CB2F1C20622C002EE1D3 /* GFTabBarViewController.m in Sources */,
 				FCB8CAF51C205BAF002EE1D3 /* AppDelegate.m in Sources */,
+				FC0C56201C2067C000B6CF1D /* GFMessageViewController.m in Sources */,
+				FC0C562D1C206A7700B6CF1D /* UIImage+GFImage.m in Sources */,
 				FCB8CAFE1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld in Sources */,
+				FC0C56261C2067D500B6CF1D /* GFMeViewController.m in Sources */,
+				FC0C56231C2067CE00B6CF1D /* GFDiscoverViewController.m in Sources */,
 				FCB8CAF21C205BAF002EE1D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +583,7 @@
 				FCB8CB1F1C205BAF002EE1D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCB8CB201C205BAF002EE1D3 /* Build configuration list for PBXNativeTarget "GFSinaWeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +592,7 @@
 				FCB8CB221C205BAF002EE1D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCB8CB231C205BAF002EE1D3 /* Build configuration list for PBXNativeTarget "GFSinaWeiBoUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +601,7 @@
 				FCB8CB251C205BAF002EE1D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
