@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GFTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    GFTabBarViewController *tabBarController = [[GFTabBarViewController alloc]init];
+    
+    self.window.rootViewController = tabBarController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
