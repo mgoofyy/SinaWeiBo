@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC010AA91C21712800449FB9 /* GFTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC010AA81C21712800449FB9 /* GFTwoViewController.m */; };
+		FC099E411C215A58009D63B1 /* GFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FC099E401C215A58009D63B1 /* GFSearchBar.m */; };
+		FC099E441C21654A009D63B1 /* UIBarButtonItem+GFBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC099E431C21654A009D63B1 /* UIBarButtonItem+GFBarButtonItem.m */; };
+		FC099E471C216820009D63B1 /* GFOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC099E461C216820009D63B1 /* GFOneViewController.m */; };
 		FC0C561A1C20671700B6CF1D /* GFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C56191C20671700B6CF1D /* GFHomeViewController.m */; };
 		FC0C56201C2067C000B6CF1D /* GFMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C561F1C2067C000B6CF1D /* GFMessageViewController.m */; };
 		FC0C56231C2067CE00B6CF1D /* GFDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C56221C2067CE00B6CF1D /* GFDiscoverViewController.m */; };
 		FC0C56261C2067D500B6CF1D /* GFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C56251C2067D500B6CF1D /* GFMeViewController.m */; };
 		FC0C562D1C206A7700B6CF1D /* UIImage+GFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C562C1C206A7700B6CF1D /* UIImage+GFImage.m */; };
 		FC0C56331C2073CD00B6CF1D /* GFTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C56321C2073CD00B6CF1D /* GFTabBar.m */; };
+		FC9F33491C2147B4004AF041 /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9F33481C2147B4004AF041 /* GFNavigationController.m */; };
 		FCB8CAF21C205BAF002EE1D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAF11C205BAF002EE1D3 /* main.m */; };
 		FCB8CAF51C205BAF002EE1D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAF41C205BAF002EE1D3 /* AppDelegate.m */; };
 		FCB8CAFE1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAFC1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld */; };
@@ -43,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC010AA71C21712800449FB9 /* GFTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTwoViewController.h; sourceTree = "<group>"; };
+		FC010AA81C21712800449FB9 /* GFTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTwoViewController.m; sourceTree = "<group>"; };
+		FC099E3F1C215A58009D63B1 /* GFSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSearchBar.h; sourceTree = "<group>"; };
+		FC099E401C215A58009D63B1 /* GFSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSearchBar.m; sourceTree = "<group>"; };
+		FC099E421C21654A009D63B1 /* UIBarButtonItem+GFBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GFBarButtonItem.h"; sourceTree = "<group>"; };
+		FC099E431C21654A009D63B1 /* UIBarButtonItem+GFBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GFBarButtonItem.m"; sourceTree = "<group>"; };
+		FC099E451C216820009D63B1 /* GFOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFOneViewController.h; sourceTree = "<group>"; };
+		FC099E461C216820009D63B1 /* GFOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFOneViewController.m; sourceTree = "<group>"; };
 		FC0C56181C20671700B6CF1D /* GFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHomeViewController.h; sourceTree = "<group>"; };
 		FC0C56191C20671700B6CF1D /* GFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHomeViewController.m; sourceTree = "<group>"; };
 		FC0C561E1C2067C000B6CF1D /* GFMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFMessageViewController.h; sourceTree = "<group>"; };
@@ -55,6 +68,8 @@
 		FC0C562C1C206A7700B6CF1D /* UIImage+GFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GFImage.m"; sourceTree = "<group>"; };
 		FC0C56311C2073CD00B6CF1D /* GFTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFTabBar.h; sourceTree = "<group>"; };
 		FC0C56321C2073CD00B6CF1D /* GFTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFTabBar.m; sourceTree = "<group>"; };
+		FC9F33471C2147B4004AF041 /* GFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNavigationController.h; sourceTree = "<group>"; };
+		FC9F33481C2147B4004AF041 /* GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNavigationController.m; sourceTree = "<group>"; };
 		FCB8CAED1C205BAF002EE1D3 /* GFSinaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFSinaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB8CAF11C205BAF002EE1D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCB8CAF31C205BAF002EE1D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +131,8 @@
 			children = (
 				FC0C56211C2067CE00B6CF1D /* GFDiscoverViewController.h */,
 				FC0C56221C2067CE00B6CF1D /* GFDiscoverViewController.m */,
+				FC099E3F1C215A58009D63B1 /* GFSearchBar.h */,
+				FC099E401C215A58009D63B1 /* GFSearchBar.m */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -134,6 +151,10 @@
 			children = (
 				FC0C562B1C206A7700B6CF1D /* UIImage+GFImage.h */,
 				FC0C562C1C206A7700B6CF1D /* UIImage+GFImage.m */,
+				FC9F33471C2147B4004AF041 /* GFNavigationController.h */,
+				FC9F33481C2147B4004AF041 /* GFNavigationController.m */,
+				FC099E421C21654A009D63B1 /* UIBarButtonItem+GFBarButtonItem.h */,
+				FC099E431C21654A009D63B1 /* UIBarButtonItem+GFBarButtonItem.m */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -152,8 +173,6 @@
 			children = (
 				FCB8CB2D1C20622C002EE1D3 /* GFTabBarViewController.h */,
 				FCB8CB2E1C20622C002EE1D3 /* GFTabBarViewController.m */,
-				FC0C56181C20671700B6CF1D /* GFHomeViewController.h */,
-				FC0C56191C20671700B6CF1D /* GFHomeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -163,6 +182,19 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FC9F33401C21457C004AF041 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C56181C20671700B6CF1D /* GFHomeViewController.h */,
+				FC0C56191C20671700B6CF1D /* GFHomeViewController.m */,
+				FC099E451C216820009D63B1 /* GFOneViewController.h */,
+				FC099E461C216820009D63B1 /* GFOneViewController.m */,
+				FC010AA71C21712800449FB9 /* GFTwoViewController.h */,
+				FC010AA81C21712800449FB9 /* GFTwoViewController.m */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		FCB8CAE41C205BAF002EE1D3 = {
@@ -188,7 +220,8 @@
 		FCB8CAEF1C205BAF002EE1D3 /* GFSinaWeiBo */ = {
 			isa = PBXGroup;
 			children = (
-				FCB8CB2C1C2061F0002EE1D3 /* Home */,
+				FC9F33401C21457C004AF041 /* Home */,
+				FCB8CB2C1C2061F0002EE1D3 /* Main */,
 				FC0C561D1C20678A00B6CF1D /* Me */,
 				FC0C561C1C20678000B6CF1D /* Discover */,
 				FC0C561B1C20677100B6CF1D /* Message */,
@@ -248,14 +281,14 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
-		FCB8CB2C1C2061F0002EE1D3 /* Home */ = {
+		FCB8CB2C1C2061F0002EE1D3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				FC0C56301C20718E00B6CF1D /* Model */,
 				FC0C562F1C20718800B6CF1D /* Controller */,
 				FC0C562E1C20715900B6CF1D /* View */,
 			);
-			name = Home;
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,15 +421,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9F33491C2147B4004AF041 /* GFNavigationController.m in Sources */,
 				FC0C561A1C20671700B6CF1D /* GFHomeViewController.m in Sources */,
 				FCB8CB2F1C20622C002EE1D3 /* GFTabBarViewController.m in Sources */,
+				FC099E441C21654A009D63B1 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FCB8CAF51C205BAF002EE1D3 /* AppDelegate.m in Sources */,
+				FC099E411C215A58009D63B1 /* GFSearchBar.m in Sources */,
 				FC0C56201C2067C000B6CF1D /* GFMessageViewController.m in Sources */,
 				FC0C56331C2073CD00B6CF1D /* GFTabBar.m in Sources */,
 				FC0C562D1C206A7700B6CF1D /* UIImage+GFImage.m in Sources */,
 				FCB8CAFE1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld in Sources */,
 				FC0C56261C2067D500B6CF1D /* GFMeViewController.m in Sources */,
+				FC010AA91C21712800449FB9 /* GFTwoViewController.m in Sources */,
 				FC0C56231C2067CE00B6CF1D /* GFDiscoverViewController.m in Sources */,
+				FC099E471C216820009D63B1 /* GFOneViewController.m in Sources */,
 				FCB8CAF21C205BAF002EE1D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

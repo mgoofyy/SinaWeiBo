@@ -12,4 +12,6 @@
 
 +(instancetype)imageWithOriginImage:(NSString *)imageName;
 
++ (instancetype)imageWithStretchableName:(NSString *)imageName;
+
 @end

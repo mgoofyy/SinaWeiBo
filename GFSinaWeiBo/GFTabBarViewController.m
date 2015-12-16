@@ -13,7 +13,7 @@
 #import "GFDiscoverViewController.h"
 #import "GFMeViewController.h"
 #import "GFTabBar.h"
-
+#import "GFNavigationController.h"
 
 @interface GFTabBarViewController ()
 
@@ -36,6 +36,7 @@
 //    self.tabBar = tabBar;
     [self setValue:tabBar forKey:@"tabBar"];
     NSLog(@"%@",self.tabBar);
+//    [self.tabBar removeFromSuperview];
     // Do any additional setup after loading the view.
 }
 
@@ -69,7 +70,7 @@
     viewController.tabBarItem.image = [UIImage imageWithOriginImage:imageName];
     viewController.tabBarItem.selectedImage = [UIImage imageWithOriginImage:selectImageName];
     viewController.title = title;
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController];
+    GFNavigationController *nav = [[GFNavigationController alloc]initWithRootViewController:viewController];
     [self addChildViewController:nav];
     [self.tabBarItem addObject:viewController];
 }
