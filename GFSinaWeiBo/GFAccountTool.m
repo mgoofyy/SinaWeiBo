@@ -16,7 +16,6 @@
 
 static GFSinaAccountInfo *_account;
 +(void)saveAcountInfo:(GFSinaAccountInfo *)account {
-    NSLog(@"%@___________",account);
     [NSKeyedArchiver archiveRootObject:account toFile:GFAccoutFileName];
 }
 
