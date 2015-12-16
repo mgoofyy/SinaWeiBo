@@ -7,6 +7,8 @@
 //
 
 #import "GFHomeViewController.h"
+#import "UIBarButtonItem+GFBarButtonItem.h"
+#import "GFOneViewController.h"
 
 @interface GFHomeViewController ()
 
@@ -16,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setNavigationBar];
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +27,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+-(void)setNavigationBar {
+   
+    // 左边
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"navigationbar_friendsearch"] highImage:[UIImage imageNamed:@"navigationbar_friendsearch_highlighted"] target:self action:@selector(friendsearch) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"navigationbar_pop"] highImage: [UIImage imageNamed:@"navigationbar_pop_highlighted"] target:self action:@selector(pop) forControlEvents:UIControlEventTouchUpInside];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+
+
+#pragma 响应事件 - action
+
+-(void)friendsearch {
+    
+}
+
+
+-(void)pop {
+    
+    GFOneViewController *oneViewController = [[GFOneViewController alloc]init];
+    oneViewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:oneViewController  animated:true];
+}
 
 @end

@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc]initWithTitle:@"发起聊天" style:UIBarButtonItemStylePlain target:self action:@selector(launchChat)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+//    self.navigationItem
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +27,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
