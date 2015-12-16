@@ -27,6 +27,8 @@
 		FC1BCF181C21AB15007DEC5F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BCF0D1C21AB14007DEC5F /* AFURLRequestSerialization.m */; };
 		FC1BCF191C21AB15007DEC5F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BCF0F1C21AB14007DEC5F /* AFURLResponseSerialization.m */; };
 		FC1BCF1A1C21AB15007DEC5F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BCF111C21AB14007DEC5F /* AFURLSessionManager.m */; };
+		FC1BCF1F1C21B1CE007DEC5F /* GFSinaAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BCF1E1C21B1CE007DEC5F /* GFSinaAccountInfo.m */; };
+		FC1BCF241C21BD27007DEC5F /* GFAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1BCF231C21BD27007DEC5F /* GFAccountTool.m */; };
 		FC9F33491C2147B4004AF041 /* GFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9F33481C2147B4004AF041 /* GFNavigationController.m */; };
 		FCB8CAF21C205BAF002EE1D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAF11C205BAF002EE1D3 /* main.m */; };
 		FCB8CAF51C205BAF002EE1D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAF41C205BAF002EE1D3 /* AppDelegate.m */; };
@@ -99,6 +101,10 @@
 		FC1BCF0F1C21AB14007DEC5F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		FC1BCF101C21AB14007DEC5F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		FC1BCF111C21AB14007DEC5F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		FC1BCF1D1C21B1CE007DEC5F /* GFSinaAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSinaAccountInfo.h; sourceTree = "<group>"; };
+		FC1BCF1E1C21B1CE007DEC5F /* GFSinaAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSinaAccountInfo.m; sourceTree = "<group>"; };
+		FC1BCF221C21BD27007DEC5F /* GFAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFAccountTool.h; sourceTree = "<group>"; };
+		FC1BCF231C21BD27007DEC5F /* GFAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFAccountTool.m; sourceTree = "<group>"; };
 		FC9F33471C2147B4004AF041 /* GFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNavigationController.h; sourceTree = "<group>"; };
 		FC9F33481C2147B4004AF041 /* GFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNavigationController.m; sourceTree = "<group>"; };
 		FCB8CAED1C205BAF002EE1D3 /* GFSinaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFSinaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,8 +251,8 @@
 		FC1BCEF91C21A2F8007DEC5F /* oAuth */ = {
 			isa = PBXGroup;
 			children = (
-				FC1BCEFA1C21A318007DEC5F /* GFOAuthViewController.h */,
-				FC1BCEFB1C21A318007DEC5F /* GFOAuthViewController.m */,
+				FC1BCF1C1C21B196007DEC5F /* Model */,
+				FC1BCF1B1C21B187007DEC5F /* Controller */,
 			);
 			name = oAuth;
 			sourceTree = "<group>";
@@ -285,6 +291,41 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		FC1BCF1B1C21B187007DEC5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BCEFA1C21A318007DEC5F /* GFOAuthViewController.h */,
+				FC1BCEFB1C21A318007DEC5F /* GFOAuthViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FC1BCF1C1C21B196007DEC5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BCF1D1C21B1CE007DEC5F /* GFSinaAccountInfo.h */,
+				FC1BCF1E1C21B1CE007DEC5F /* GFSinaAccountInfo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FC1BCF201C21BCDF007DEC5F /* GFTools */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BCF211C21BCF9007DEC5F /* Account */,
+			);
+			name = GFTools;
+			sourceTree = "<group>";
+		};
+		FC1BCF211C21BCF9007DEC5F /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BCF221C21BD27007DEC5F /* GFAccountTool.h */,
+				FC1BCF231C21BD27007DEC5F /* GFAccountTool.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
 		FC9F33401C21457C004AF041 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +359,7 @@
 		FCB8CAEF1C205BAF002EE1D3 /* GFSinaWeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				FC1BCF201C21BCDF007DEC5F /* GFTools */,
 				FC1BCEF91C21A2F8007DEC5F /* oAuth */,
 				FC9F33401C21457C004AF041 /* Home */,
 				FCB8CB2C1C2061F0002EE1D3 /* Main */,
@@ -524,6 +566,8 @@
 				FC1BCF1A1C21AB15007DEC5F /* AFURLSessionManager.m in Sources */,
 				FC1BCF171C21AB15007DEC5F /* AFURLConnectionOperation.m in Sources */,
 				FC9F33491C2147B4004AF041 /* GFNavigationController.m in Sources */,
+				FC1BCF241C21BD27007DEC5F /* GFAccountTool.m in Sources */,
+				FC1BCF1F1C21B1CE007DEC5F /* GFSinaAccountInfo.m in Sources */,
 				FC1BCF141C21AB15007DEC5F /* AFHTTPSessionManager.m in Sources */,
 				FC1BCF151C21AB15007DEC5F /* AFNetworkReachabilityManager.m in Sources */,
 				FC0C561A1C20671700B6CF1D /* GFHomeViewController.m in Sources */,
