@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GFTabBarViewController.h"
+#import "GFOAuthViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,9 +22,13 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    GFTabBarViewController *tabBarController = [[GFTabBarViewController alloc]init];
+//    GFTabBarViewController *tabBarController = [[GFTabBarViewController alloc]init];
+//    
+//    self.window.rootViewController = tabBarController;
+    GFOAuthViewController *oAuthViewController = [[GFOAuthViewController alloc]init];
     
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = oAuthViewController;
+    
     
     [self.window makeKeyAndVisible];
     
