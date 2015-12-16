@@ -12,7 +12,7 @@
 #import "GFMessageViewController.h"
 #import "GFDiscoverViewController.h"
 #import "GFMeViewController.h"
-
+#import "GFTabBar.h"
 
 
 @interface GFTabBarViewController ()
@@ -30,9 +30,16 @@
     
     [self setChildViewController];
     
+    NSLog(@"%@",self.tabBar.subviews);
     
+    GFTabBar *tabBar = [[GFTabBar alloc]initWithFrame:self.tabBar.frame];
+//    self.tabBar = tabBar;
+    [self setValue:tabBar forKey:@"tabBar"];
+    NSLog(@"%@",self.tabBar);
     // Do any additional setup after loading the view.
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -64,6 +71,7 @@
     viewController.title = title;
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController];
     [self addChildViewController:nav];
+    [self.tabBarItem addObject:viewController];
 }
 
 //-(void)
