@@ -19,12 +19,6 @@
 #define GFexpires_inKEY   @"expires_in"
 #define GFuidKEY          @"uid"
 
-+(instancetype)accoutWithDict:(NSDictionary *)dict {
-    
-    GFSinaAccountInfo *accoutInfo = [[self alloc] init];
-    [accoutInfo setValuesForKeysWithDictionary:dict];
-    return accoutInfo;
-}
 
 +(id)initWithDict:(NSDictionary *)dict {
    

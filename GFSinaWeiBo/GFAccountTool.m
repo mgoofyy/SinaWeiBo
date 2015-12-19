@@ -15,6 +15,7 @@
 #define GFAccoutFileName  [NSHomeDirectory() stringByAppendingPathComponent:@"accout.data"]
 
 static GFSinaAccountInfo *_account;
+
 +(void)saveAcountInfo:(GFSinaAccountInfo *)account {
     [NSKeyedArchiver archiveRootObject:account toFile:GFAccoutFileName];
 }

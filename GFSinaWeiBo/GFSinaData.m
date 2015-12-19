@@ -8,6 +8,12 @@
 
 #import "GFSinaData.h"
 
+
 @implementation GFSinaData
+
++ (NSDictionary *)mj_objectClassInArray {
+    
+    return @{@"pic_urls":[GFPhoto class]};
+}
 
 @end
