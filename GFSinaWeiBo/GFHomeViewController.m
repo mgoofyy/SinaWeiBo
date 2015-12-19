@@ -11,14 +11,26 @@
 #import "GFOneViewController.h"
 #import "AFNetworking.h"
 #import "GFAccountTool.h"
+#import "GFSinaData.h"
+#import "MJExtension/MJExtension.h"
 
 @interface GFHomeViewController ()
+
+@property (nonatomic,strong) NSMutableArray *sinaDataArray;
 
 @end
 
 @implementation GFHomeViewController
 
-#define GFREQUEST_WEIBO_URL @"https://api.weibo.com/2/statuses/public_timeline.json"
+#define GFREQUEST_WEIBO_URL @"https://api.weibo.com/2/statuses/friends_timeline.json"
+
+-(NSMutableArray *)sinaDataArray {
+    if (_sinaDataArray == nil) {
+        _sinaDataArray = [NSMutableArray array];
+    }
+    
+    return _sinaDataArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,7 +58,13 @@
     NSMutableDictionary *requestParameters = [NSMutableDictionary dictionary];
     requestParameters[@"access_token"] = [GFAccountTool getAccountInfo].access_token;
     [manger GET:GFREQUEST_WEIBO_URL parameters:requestParameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-       
+        NSArray *dictArr = (NSArray *)responseObject[@"statuses"];
+        for (NSDictionary *dict in dictArr) {
+            GFSinaData *sinaDataOfOne = [GFSinaData mj_objectWithKeyValues:dict];
+            [self.sinaDataArray addObject:sinaDataOfOne];
+            NSLog(@"%@",sinaDataOfOne.pic_urls);
+        }
+        NSLog(@"%@",self.sinaDataArray);
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
        
     }];

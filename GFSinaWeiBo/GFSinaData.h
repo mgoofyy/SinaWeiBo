@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GFUser.h"
+#import "MJExtension/MJExtension.h"
+#import "GFPhoto.h"
 
-@interface GFSinaData : NSObject
+@interface GFSinaData : NSObject <MJKeyValue>
 
 /*
  created_at	string	微博创建时间
@@ -28,6 +31,34 @@
  pic_ids	object	微博配图ID。多图时返回多图ID，用来拼接图片url。用返回字段thumbnail_pic的地址配上该返回字段的图片ID，即可得到多个图片url。
 
  */
+
+
+
+@property (nonatomic,strong) GFSinaData *states;
+
+@property (nonatomic,copy) NSString *created_at;
+
+@property (nonatomic,copy) NSString *text;
+
+@property (nonatomic,copy) NSString *favorited;
+
+@property (nonatomic,copy) NSString *thumbnail_pic;
+
+@property (nonatomic,copy) NSString *idstr;
+
+@property (nonatomic,copy) NSString *source;
+
+@property (nonatomic,assign) int reposts_count;
+
+@property (nonatomic,assign) int comments_count;
+
+@property (nonatomic,assign)int attitudes_count;
+
+@property (nonatomic,strong) GFUser *user;
+
+@property (nonatomic,strong) NSArray *pic_urls;
+
+//@property (nonatomic,strong) GFUser *
 
 
 
