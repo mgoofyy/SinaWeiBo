@@ -19,6 +19,13 @@
 #define GFexpires_inKEY   @"expires_in"
 #define GFuidKEY          @"uid"
 
++(instancetype)accoutWithDict:(NSDictionary *)dict {
+    GFSinaAccountInfo *accoutInfo = [[self alloc] init];
+    [accoutInfo setValuesForKeysWithDictionary:dict];
+       return accoutInfo;
+  
+}
+
 
 +(id)initWithDict:(NSDictionary *)dict {
    
@@ -31,6 +38,7 @@
     if (self = [super init]) {
         _access_token = [aDecoder decodeObjectForKey:GFaccess_tokenKEY];
         _expires_in   = [aDecoder decodeObjectForKey:GFexpires_inKEY];
+//        _remind_in    = [aDecoder decodeObjectForKey:@"remind_in"];
         _uid          = [aDecoder decodeObjectForKey:GFuidKEY];
     }
     return self;
@@ -40,6 +48,7 @@
     [aCoder encodeObject:_access_token forKey:GFaccess_tokenKEY];
     [aCoder encodeObject:_expires_in forKey:GFexpires_inKEY];
     [aCoder encodeObject:_uid forKey:GFuidKEY];
+//    [aCoder encodeObject:_remind_in forKey:@"remind_in"];
 }
 
 @end

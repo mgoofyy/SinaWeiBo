@@ -42,7 +42,7 @@
 
 @property (nonatomic,copy) NSString *favorited;
 
-@property (nonatomic,copy) NSString *thumbnail_pic;
+@property (nonatomic,strong) NSURL *thumbnail_pic;
 
 @property (nonatomic,copy) NSString *idstr;
 
