@@ -541,7 +541,10 @@
 		FC9F33401C21457C004AF041 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				FC1BCEF71C21A224007DEC5F /* View */,
+=======
+>>>>>>> 5d5e9d4f63d8957db34ff3b20b933735edb9d216
 				FC1BCEF81C21A22C007DEC5F /* Model */,
 				FC1BCEF61C21A21D007DEC5F /* Controller */,
 			);
@@ -684,10 +687,18 @@
 		FCAAE3961C26858F00886673 /* SinaNotificationTool */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				FCAAE39E1C2688BB00886673 /* GFNotificationNumber.h */,
 				FCAAE39F1C2688BB00886673 /* GFNotificationNumber.m */,
 				FCAAE3971C2685CF00886673 /* GFRequestNotifiTool.h */,
 				FCAAE3981C2685CF00886673 /* GFRequestNotifiTool.m */,
+=======
+				FCAAE39F1C2688BB00886673 /* GFNotificationNumber.m */,
+				FCAAE39E1C2688BB00886673 /* GFNotificationNumber.h */,
+				FC1BCEF71C21A224007DEC5F /* View */,
+				FCAAE3981C2685CF00886673 /* GFRequestNotifiTool.m */,
+				FCAAE3971C2685CF00886673 /* GFRequestNotifiTool.h */,
+>>>>>>> 5d5e9d4f63d8957db34ff3b20b933735edb9d216
 				FCAAE3A11C268A2400886673 /* GFRequestNotiParamters.h */,
 				FCAAE3A21C268A2400886673 /* GFRequestNotiParamters.m */,
 			);
