@@ -14,6 +14,9 @@
 #import "GFMeViewController.h"
 #import "GFTabBar.h"
 #import "GFNavigationController.h"
+#import "GFRequestNotifiTool.h"
+#import "GFNotificationNumber.h"
+#import "MJExtension/MJExtension.h"
 
 @interface GFTabBarViewController ()
 
@@ -38,6 +41,9 @@
 //    NSLog(@"%@",self.tabBar);
 //    [self.tabBar removeFromSuperview];
     // Do any additional setup after loading the view.
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(requestNotificationNumber) userInfo:nil repeats:YES];
+    
+    
 }
 
 
@@ -75,5 +81,15 @@
     [self.tabBarItem addObject:viewController];
 }
 
-//-(void)
+-(void)requestNotificationNumber {
+    [GFRequestNotifiTool GET:@"https://rm.api.weibo.com/2/remind/unread_count.json" success:^(id responseObject){
+        
+        GFNotificationNumber *noficationData = [GFNotificationNumber mj_objectWithKeyValues:responseObject];
+        _home.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d",noficationData.status];
+        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:99];
+        
+    } failure:^(NSError *error) {
+        
+    }];
+}
 @end

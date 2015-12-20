@@ -16,15 +16,12 @@
     NSMutableDictionary *requesrParameters = [NSMutableDictionary dictionary];
     requesrParameters = [[GFRequestNotiParamters alloc] init].paramters;
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    NSLog(@"%@",requesrParameters);
    
     [mgr GET:URLString parameters:requesrParameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-        NSLog(@"%@",responseObject);
         if (success) {
             success(responseObject);
         }
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-         NSLog(@"_________");
         if (failure) {
             failure(error);
         }
