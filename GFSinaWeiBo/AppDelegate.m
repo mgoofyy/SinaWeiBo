@@ -32,7 +32,8 @@
         
             self.window.rootViewController = tabBarController;
     }
-    
+    UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:setting];
 
     
     
