@@ -30,12 +30,12 @@
     
     [self setChildViewController];
     
-    NSLog(@"%@",self.tabBar.subviews);
+//    NSLog(@"%@",self.tabBar.subviews);
     
     GFTabBar *tabBar = [[GFTabBar alloc]initWithFrame:self.tabBar.frame];
 //    self.tabBar = tabBar;
     [self setValue:tabBar forKey:@"tabBar"];
-    NSLog(@"%@",self.tabBar);
+//    NSLog(@"%@",self.tabBar);
 //    [self.tabBar removeFromSuperview];
     // Do any additional setup after loading the view.
 }

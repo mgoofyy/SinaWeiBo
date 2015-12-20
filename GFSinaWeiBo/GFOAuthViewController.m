@@ -56,7 +56,7 @@
     NSRange range = [urlStr rangeOfString:@"code="];
     if (range.length) {
         NSString *code = [urlStr substringFromIndex:range.location + range.length];
-        
+        NSLog(@"————————————————%@",code);
         [self requestUserAccessToken:code];
         
     }
@@ -80,14 +80,14 @@
     requestParams[@"redirect_uri"] = GFREDIRCT_URI;
     
     [manger POST:GFACCESS_BASEURL parameters:requestParams success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-        NSLog(@"%@",responseObject);
+        NSLog(@"+++++++%@",responseObject);
         GFSinaAccountInfo *userInfoDiction = [GFSinaAccountInfo initWithDict:responseObject];
        
         //把数据归档
         [GFAccountTool saveAcountInfo:userInfoDiction];
         
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-        NSLog(@"%@",error);
+        NSLog(@"___________________%@",error);
     }];
     
 }

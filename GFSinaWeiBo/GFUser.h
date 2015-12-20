@@ -10,10 +10,10 @@
 
 @interface GFUser : NSObject
 
-@property (nonatomic,strong) NSMutableArray *pic_url;
+@property (nonatomic,copy) NSString *name;
 
 
-@property (nonatomic,copy) NSString *profile_image_url;
+@property (nonatomic,strong) NSURL *profile_image_url;
 
 
 

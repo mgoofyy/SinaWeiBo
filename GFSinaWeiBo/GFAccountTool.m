@@ -22,8 +22,9 @@ static GFSinaAccountInfo *_account;
 
 +(GFSinaAccountInfo *)getAccountInfo {
     if (_account == nil) {
+        
          GFSinaAccountInfo *account = [NSKeyedUnarchiver unarchiveObjectWithFile:GFAccoutFileName];
-        NSLog(@"%@)",account.access_token);
+//        NSLog(@"%@)",account.access_token);
         _account = account;
     }
    
