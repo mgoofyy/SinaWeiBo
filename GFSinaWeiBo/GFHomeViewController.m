@@ -42,7 +42,15 @@
     [super viewDidLoad];
     [self setNavigationBar];
     [self loadSinaData];
+<<<<<<< HEAD
     
+=======
+    [GFRequestNotifiTool GET:@"https://rm.api.weibo.com/2/remind/unread_count.json" success:^(id responseObject) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
+>>>>>>> 5d5e9d4f63d8957db34ff3b20b933735edb9d216
     // Do any additional setup after loading the view.
 }
 
