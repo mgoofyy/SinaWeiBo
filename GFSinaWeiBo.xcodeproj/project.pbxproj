@@ -81,6 +81,10 @@
 		FCAAE3911C265E1F00886673 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAE37D1C265E1F00886673 /* UIScrollView+MJRefresh.m */; };
 		FCAAE3921C265E1F00886673 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAE37F1C265E1F00886673 /* UIView+MJExtension.m */; };
 		FCAAE3951C2663BC00886673 /* GFSinaDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAE3941C2663BC00886673 /* GFSinaDataTool.m */; };
+		FCAAE3991C2685CF00886673 /* GFRequestNotifiTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAE3981C2685CF00886673 /* GFRequestNotifiTool.m */; };
+		FCAAE39C1C26865300886673 /* GFBaseParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAE39B1C26865300886673 /* GFBaseParameters.m */; };
+		FCAAE3A01C2688BB00886673 /* GFNotificationNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAE39F1C2688BB00886673 /* GFNotificationNumber.m */; };
+		FCAAE3A31C268A2400886673 /* GFRequestNotiParamters.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAE3A21C268A2400886673 /* GFRequestNotiParamters.m */; };
 		FCB8CAF21C205BAF002EE1D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAF11C205BAF002EE1D3 /* main.m */; };
 		FCB8CAF51C205BAF002EE1D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAF41C205BAF002EE1D3 /* AppDelegate.m */; };
 		FCB8CAFE1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCB8CAFC1C205BAF002EE1D3 /* GFSinaWeiBo.xcdatamodeld */; };
@@ -262,6 +266,14 @@
 		FCAAE37F1C265E1F00886673 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		FCAAE3931C2663BC00886673 /* GFSinaDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSinaDataTool.h; sourceTree = "<group>"; };
 		FCAAE3941C2663BC00886673 /* GFSinaDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSinaDataTool.m; sourceTree = "<group>"; };
+		FCAAE3971C2685CF00886673 /* GFRequestNotifiTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRequestNotifiTool.h; sourceTree = "<group>"; };
+		FCAAE3981C2685CF00886673 /* GFRequestNotifiTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRequestNotifiTool.m; sourceTree = "<group>"; };
+		FCAAE39A1C26865300886673 /* GFBaseParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBaseParameters.h; sourceTree = "<group>"; };
+		FCAAE39B1C26865300886673 /* GFBaseParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBaseParameters.m; sourceTree = "<group>"; };
+		FCAAE39E1C2688BB00886673 /* GFNotificationNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFNotificationNumber.h; sourceTree = "<group>"; };
+		FCAAE39F1C2688BB00886673 /* GFNotificationNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFNotificationNumber.m; sourceTree = "<group>"; };
+		FCAAE3A11C268A2400886673 /* GFRequestNotiParamters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRequestNotiParamters.h; sourceTree = "<group>"; };
+		FCAAE3A21C268A2400886673 /* GFRequestNotiParamters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFRequestNotiParamters.m; sourceTree = "<group>"; };
 		FCB8CAED1C205BAF002EE1D3 /* GFSinaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFSinaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB8CAF11C205BAF002EE1D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCB8CAF31C205BAF002EE1D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -478,6 +490,8 @@
 		FC1BCF201C21BCDF007DEC5F /* GFTools */ = {
 			isa = PBXGroup;
 			children = (
+				FCAAE39D1C26865B00886673 /* BaseParameters */,
+				FCAAE3961C26858F00886673 /* SinaNotificationTool */,
 				FC1BCF211C21BCF9007DEC5F /* Account */,
 				FCAAE3931C2663BC00886673 /* GFSinaDataTool.h */,
 				FCAAE3941C2663BC00886673 /* GFSinaDataTool.m */,
@@ -528,7 +542,6 @@
 			isa = PBXGroup;
 			children = (
 				FC1BCEF81C21A22C007DEC5F /* Model */,
-				FC1BCEF71C21A224007DEC5F /* View */,
 				FC1BCEF61C21A21D007DEC5F /* Controller */,
 			);
 			name = Home;
@@ -665,6 +678,29 @@
 				FCAAE3751C265E1F00886673 /* MJRefreshHeader.m */,
 			);
 			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		FCAAE3961C26858F00886673 /* SinaNotificationTool */ = {
+			isa = PBXGroup;
+			children = (
+				FCAAE39F1C2688BB00886673 /* GFNotificationNumber.m */,
+				FCAAE39E1C2688BB00886673 /* GFNotificationNumber.h */,
+				FC1BCEF71C21A224007DEC5F /* View */,
+				FCAAE3981C2685CF00886673 /* GFRequestNotifiTool.m */,
+				FCAAE3971C2685CF00886673 /* GFRequestNotifiTool.h */,
+				FCAAE3A11C268A2400886673 /* GFRequestNotiParamters.h */,
+				FCAAE3A21C268A2400886673 /* GFRequestNotiParamters.m */,
+			);
+			name = SinaNotificationTool;
+			sourceTree = "<group>";
+		};
+		FCAAE39D1C26865B00886673 /* BaseParameters */ = {
+			isa = PBXGroup;
+			children = (
+				FCAAE39A1C26865300886673 /* GFBaseParameters.h */,
+				FCAAE39B1C26865300886673 /* GFBaseParameters.m */,
+			);
+			name = BaseParameters;
 			sourceTree = "<group>";
 		};
 		FCB8CAE41C205BAF002EE1D3 = {
@@ -918,6 +954,7 @@
 				FC1BCF5A1C21D93E007DEC5F /* NSString+MJExtension.m in Sources */,
 				FCAAE3871C265E1F00886673 /* MJRefreshNormalHeader.m in Sources */,
 				FCAAE2FB1C26450D00886673 /* MKAnnotationView+WebCache.m in Sources */,
+				FCAAE3A31C268A2400886673 /* GFRequestNotiParamters.m in Sources */,
 				FC1BCF571C21D93E007DEC5F /* NSObject+MJCoding.m in Sources */,
 				FCAAE3881C265E1F00886673 /* MJRefreshStateHeader.m in Sources */,
 				FC1BCF501C21D93E007DEC5F /* MJDictionaryCache.m in Sources */,
@@ -926,10 +963,12 @@
 				FC0C561A1C20671700B6CF1D /* GFHomeViewController.m in Sources */,
 				FC1BCF561C21D93E007DEC5F /* NSObject+MJClass.m in Sources */,
 				FCAAE3011C26450D00886673 /* SDWebImageDownloaderOperation.m in Sources */,
+				FCAAE3A01C2688BB00886673 /* GFNotificationNumber.m in Sources */,
 				FCB8CB2F1C20622C002EE1D3 /* GFTabBarViewController.m in Sources */,
 				FC099E441C21654A009D63B1 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FCB8CAF51C205BAF002EE1D3 /* AppDelegate.m in Sources */,
 				FC1BCF161C21AB15007DEC5F /* AFSecurityPolicy.m in Sources */,
+				FCAAE39C1C26865300886673 /* GFBaseParameters.m in Sources */,
 				FCAAE38B1C265E1F00886673 /* MJRefreshComponent.m in Sources */,
 				FCAAE2FE1C26450D00886673 /* SDWebImageCompat.m in Sources */,
 				FCAAE3521C265D3F00886673 /* GFSinaTableViewCell.m in Sources */,
@@ -947,6 +986,7 @@
 				FC1BCF131C21AB15007DEC5F /* AFHTTPRequestOperationManager.m in Sources */,
 				FCAAE3021C26450D00886673 /* SDWebImageManager.m in Sources */,
 				FCAAE2FF1C26450D00886673 /* SDWebImageDecoder.m in Sources */,
+				FCAAE3991C2685CF00886673 /* GFRequestNotifiTool.m in Sources */,
 				FC1C9F4B1C252C9A00F5805E /* GFPhoto.m in Sources */,
 				FC0C562D1C206A7700B6CF1D /* UIImage+GFImage.m in Sources */,
 				FC1BCF531C21D93E007DEC5F /* MJProperty.m in Sources */,
