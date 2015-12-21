@@ -62,7 +62,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavigationBar];
-    [self loadSinaData];
     NSLog(@"%@",self.viewSinaCount);
     [self.navigationController.view insertSubview:_viewSinaCount belowSubview:self.navigationController.navigationBar];
 
@@ -106,7 +105,7 @@
     [manger GET:GFREQUEST_WEIBO_URL parameters:requestParameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         [GFSinaDataTool getSinaDataModel:responseObject dataModelArray:self.sinaDataArray];
         [self.tableView reloadData];
-        self.updateSinaWeiBoCount.text = [NSString stringWithFormat:@"你获取到了%d条微博",self.sinaDataArray.count - 40];
+        self.updateSinaWeiBoCount.text = [NSString stringWithFormat:@"你获取到了%d条微博",self.sinaDataArray.count];
         [self.tableView.mj_header endRefreshing];
         
         [UIView animateWithDuration:1  animations:^{
