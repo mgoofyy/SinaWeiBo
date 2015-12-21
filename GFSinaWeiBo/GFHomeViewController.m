@@ -17,12 +17,16 @@
 #import "GFSinaTableViewCell.h"
 #import "MJRefresh.h"
 #import "GFSinaDataTool.h"
-
 #import "GFRequestNotifiTool.h"
+#import <UIKit/UIKit.h>
 
 @interface GFHomeViewController ()
 
 @property (nonatomic,strong) NSMutableArray *sinaDataArray;
+
+@property (nonatomic,strong) UIView *viewSinaCount;
+
+@property (nonatomic,strong) UILabel *updateSinaWeiBoCount;
 
 @end
 
@@ -38,12 +42,29 @@
     return _sinaDataArray;
 }
 
+-(UIView *)viewSinaCount {
+    if (_viewSinaCount == nil) {
+        
+        UIView *viewSinaCount = [[UIView alloc]initWithFrame:CGRectMake(0, 34, self.view.bounds.size.width, 30)];
+        _viewSinaCount = viewSinaCount;
+        _viewSinaCount.backgroundColor = [UIColor orangeColor];
+        _updateSinaWeiBoCount = [[UILabel alloc]initWithFrame:_viewSinaCount.bounds];
+        [_viewSinaCount addSubview:_updateSinaWeiBoCount];
+        _updateSinaWeiBoCount.contentMode = UIViewContentModeCenter;
+        _updateSinaWeiBoCount.textColor = [UIColor whiteColor];
+        _updateSinaWeiBoCount.font = [UIFont systemFontOfSize:18];
+        _updateSinaWeiBoCount.textAlignment = NSTextAlignmentCenter;
+       
+    }
+    return _viewSinaCount;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavigationBar];
     [self loadSinaData];
-
-    
+    NSLog(@"%@",self.viewSinaCount);
+    [self.navigationController.view insertSubview:_viewSinaCount belowSubview:self.navigationController.navigationBar];
 
     [GFRequestNotifiTool GET:@"https://rm.api.weibo.com/2/remind/unread_count.json" success:^(id responseObject) {
         
@@ -85,7 +106,21 @@
     [manger GET:GFREQUEST_WEIBO_URL parameters:requestParameters success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         [GFSinaDataTool getSinaDataModel:responseObject dataModelArray:self.sinaDataArray];
         [self.tableView reloadData];
+        self.updateSinaWeiBoCount.text = [NSString stringWithFormat:@"你获取到了%d条微博",self.sinaDataArray.count - 40];
         [self.tableView.mj_header endRefreshing];
+        
+        [UIView animateWithDuration:1  animations:^{
+            self.viewSinaCount.frame = CGRectMake(0, 64, self.view.bounds.size.width, 30);
+            
+        } completion:^(BOOL finished) {
+            
+            [UIView animateWithDuration:1.0f delay:1 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+                self.viewSinaCount.frame = CGRectMake(0, 34, self.view.bounds.size.width, 30);
+                
+            } completion:^(BOOL finished) {
+               
+            }];
+        }];
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
        
     }];
@@ -124,6 +159,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"%d",self.sinaDataArray.count);
     return self.sinaDataArray.count;
 }
 
