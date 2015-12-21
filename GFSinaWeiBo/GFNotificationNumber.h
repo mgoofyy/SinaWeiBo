@@ -10,7 +10,7 @@
 
 @interface GFNotificationNumber : NSObject
 
-<<<<<<< HEAD
+
 /*
  status	int	新微博未读数
  follower	int	新粉丝数
@@ -46,10 +46,4 @@
 
 
 
-
-
-
-
-=======
->>>>>>> 5d5e9d4f63d8957db34ff3b20b933735edb9d216
 @end
